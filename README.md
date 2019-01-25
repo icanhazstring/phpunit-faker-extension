@@ -1,5 +1,9 @@
 # phpunit-faker-extension
 
+[![Build Status](https://img.shields.io/travis/icanhazstring/phpunit-faker-extension.svg)](https://travis-ci.com/icanhazstring/phpunit-faker-extension)
+![Min php version](https://img.shields.io/badge/php-%5E7.1-lightgrey.svg)
+![Min phpunit version](https://img.shields.io/badge/phpunit%2Fphpunit-%5E7.5-lightgrey.svg)
+
 Using this extension you can use [fzaninotto/faker](https://github.com/fzaninotto/faker) with your phpunit tests. 
 Every test will be seeded so you will be able run the same test again if an error occurs.
 
