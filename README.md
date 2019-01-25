@@ -1,6 +1,6 @@
 # phpunit-faker-extension
 
-[![Build Status](https://img.shields.io/travis/icanhazstring/phpunit-faker-extension.svg)](https://travis-ci.com/icanhazstring/phpunit-faker-extension)
+![Build](https://img.shields.io/travis/com/icanhazstring/phpunit-faker-extension/master.svg)
 ![Min php version](https://img.shields.io/badge/php-%5E7.1-lightgrey.svg)
 ![Min phpunit version](https://img.shields.io/badge/phpunit%2Fphpunit-%5E7.5-lightgrey.svg)
 
