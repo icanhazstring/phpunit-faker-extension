@@ -54,6 +54,14 @@ class AwesomeTest extends TestCase implements FakerAwareTest
 ```
 > See faker documentation for more information about formatters: https://github.com/fzaninotto/faker#formatters
 
+### Running tests with a given seed
+
+To run tests with a given seed, simple set the `PHPUNIT_SEED` environment variable before running phpunit:
+
+```bash
+$ PHPUNIT_SEED=XXX vendor/bin/phpunit
+```
+
 ## Configuration
 
 This extension has three configurable parameters:
