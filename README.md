@@ -34,6 +34,26 @@ you will see a seed that was used to generate the faker data:
 
 `Tests done with seed: XXX`
 
+### Using Fake inside a test
+
+To use faker inside your tests, you will need to implement the `FakerAwareTest` interface and the `FakerTrait`.
+Since not all tests will need faker, the interface makes sure only tests using faker, will get the needed data.
+
+To actually invoke you only need to do the following:
+
+```php
+class AwesomeTest extends TestCase implements FakerAwareTest
+{
+    use FakerTrait;
+    
+    public function testAwesomeStuff(): void
+    {
+        $this->assertSame($this->fake()->name, $this->fake()->name);
+    }
+}
+```
+> See faker documentation for more information about formatters: https://github.com/fzaninotto/faker#formatters
+
 ## Configuration
 
 This extension has three configurable parameters:
