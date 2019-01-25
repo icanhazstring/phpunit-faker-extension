@@ -1,0 +1,19 @@
+language: php
+php:
+  - 7.1
+  - 7.2
+  - 7.3
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+matrix:
+  fast_finish: true
+
+before_script:
+  - composer install --no-interaction
+
+script:
+  - vendor/bin/phpunit
+  - vendor/bin/phpcs src/ tests/

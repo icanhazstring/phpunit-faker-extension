@@ -1,0 +1,34 @@
+{
+    "name": "icanhazstring/phpunit-faker-extension",
+    "description": "PHPUnit extension to add faker support",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andreas Frömer",
+            "email": "blubb0r05+github@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "phpunit/phpunit": "^7.5",
+        "fzaninotto/faker": "^1.8"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "squizlabs/php_codesniffer": "^3.4",
+        "slevomat/coding-standard": "^4.8"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "PHPUnitFaker\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PHPUnitFakerTest\\": "tests"
+        }
+    }
+}

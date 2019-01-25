@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/sebastianbergmann/phpunit/master/phpunit.xsd"
+         colors="true"
+         bootstrap="./vendor/autoload.php">
+
+    <testsuites>
+        <testsuite name="PHPUnitFaker Test Suite">
+            <directory>./tests/</directory>
+        </testsuite>
+    </testsuites>
+
+    <listeners>
+        <listener class="PHPUnitFaker\FakerTestListener">
+            <arguments>
+                <array>
+                    <element key="locale">
+                        <string>de_DE</string>
+                    </element>
+                    <element key="fakerProviderProvider">
+                        <string>PHPUnitFakerTest\Asset\TestProviderProvider</string>
+                    </element>
+                </array>
+            </arguments>
+        </listener>
+    </listeners>
+
+    <filter>
+        <whitelist>
+            <directory>./src/</directory>
+        </whitelist>
+    </filter>
+</phpunit>
